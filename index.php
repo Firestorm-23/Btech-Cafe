@@ -1,17 +1,14 @@
 <?php 
 session_start();
+include("includes/db.php");
+if(!isset($_SESSION['customer_email'])){
+header("location: customer_login.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<?php
-include("includes/db.php");
 
-if(!isset($_SESSION['customer_email'])){
-header("location: customer_login.php");
-}
-
-?>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
