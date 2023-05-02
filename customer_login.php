@@ -1,8 +1,11 @@
+<?php 
+session_start();
 
+?>
 <html>
 <head>
 	<?php 
-			session_start();
+			
 			include("includes/db.php");
 			if(isset($_POST['login'])){
 			
