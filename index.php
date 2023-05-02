@@ -6,7 +6,7 @@ session_start();
   <head>
 <?php
 include("includes/db.php");
-session_start();
+
 if(!isset($_SESSION['customer_email'])){
 header("location: customer_login.php");
 }
