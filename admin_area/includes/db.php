@@ -1,7 +1,7 @@
 <?php 
 // After uploading to online server, change this connection accordingly
 
-$con = mysqli_connect("localhost","root","","ecommerce");
+$con = mysqli_connect("pmcbankk.mysql.database.azure.com","rupesh2312","Bhimsen85%","ecommerce");
 
 if (mysqli_connect_errno())
   {
